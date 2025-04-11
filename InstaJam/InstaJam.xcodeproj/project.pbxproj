@@ -1,0 +1,644 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		704278CE2DA8422200BA951E /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 704278CD2DA8422200BA951E /* FirebaseMessaging */; };
+		705170002DA04A7100A64872 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 70516FFF2DA04A7100A64872 /* GoogleService-Info.plist */; };
+		705170032DA04B4600A64872 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 705170022DA04B4600A64872 /* FirebaseAuth */; };
+		705170052DA04B4600A64872 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 705170042DA04B4600A64872 /* FirebaseCore */; };
+		705170072DA04B4600A64872 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 705170062DA04B4600A64872 /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70516FCD2DA03FBE00A64872 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70516FB72DA03FBC00A64872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70516FBE2DA03FBC00A64872;
+			remoteInfo = InstaJam;
+		};
+		70516FD72DA03FBE00A64872 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70516FB72DA03FBC00A64872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70516FBE2DA03FBC00A64872;
+			remoteInfo = InstaJam;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		70516FBF2DA03FBC00A64872 /* InstaJam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaJam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70516FCC2DA03FBE00A64872 /* InstaJamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaJamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		70516FD62DA03FBE00A64872 /* InstaJamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaJamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		70516FFF2DA04A7100A64872 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		704278D02DA8445D00BA951E /* Exceptions for "InstaJam" folder in "InstaJam" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 70516FBE2DA03FBC00A64872 /* InstaJam */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		70516FC12DA03FBC00A64872 /* InstaJam */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				704278D02DA8445D00BA951E /* Exceptions for "InstaJam" folder in "InstaJam" target */,
+			);
+			path = InstaJam;
+			sourceTree = "<group>";
+		};
+		70516FCF2DA03FBE00A64872 /* InstaJamTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = InstaJamTests;
+			sourceTree = "<group>";
+		};
+		70516FD92DA03FBE00A64872 /* InstaJamUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = InstaJamUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70516FBC2DA03FBC00A64872 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				704278CE2DA8422200BA951E /* FirebaseMessaging in Frameworks */,
+				705170052DA04B4600A64872 /* FirebaseCore in Frameworks */,
+				705170032DA04B4600A64872 /* FirebaseAuth in Frameworks */,
+				705170072DA04B4600A64872 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70516FC92DA03FBE00A64872 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70516FD32DA03FBE00A64872 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		70516FB62DA03FBC00A64872 = {
+			isa = PBXGroup;
+			children = (
+				70516FC12DA03FBC00A64872 /* InstaJam */,
+				70516FCF2DA03FBE00A64872 /* InstaJamTests */,
+				70516FD92DA03FBE00A64872 /* InstaJamUITests */,
+				70516FC02DA03FBC00A64872 /* Products */,
+				70516FFF2DA04A7100A64872 /* GoogleService-Info.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		70516FC02DA03FBC00A64872 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70516FBF2DA03FBC00A64872 /* InstaJam.app */,
+				70516FCC2DA03FBE00A64872 /* InstaJamTests.xctest */,
+				70516FD62DA03FBE00A64872 /* InstaJamUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		70516FBE2DA03FBC00A64872 /* InstaJam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70516FE02DA03FBE00A64872 /* Build configuration list for PBXNativeTarget "InstaJam" */;
+			buildPhases = (
+				70516FBB2DA03FBC00A64872 /* Sources */,
+				70516FBC2DA03FBC00A64872 /* Frameworks */,
+				70516FBD2DA03FBC00A64872 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				70516FC12DA03FBC00A64872 /* InstaJam */,
+			);
+			name = InstaJam;
+			packageProductDependencies = (
+				705170022DA04B4600A64872 /* FirebaseAuth */,
+				705170042DA04B4600A64872 /* FirebaseCore */,
+				705170062DA04B4600A64872 /* FirebaseFirestore */,
+				704278CD2DA8422200BA951E /* FirebaseMessaging */,
+			);
+			productName = InstaJam;
+			productReference = 70516FBF2DA03FBC00A64872 /* InstaJam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		70516FCB2DA03FBE00A64872 /* InstaJamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70516FE32DA03FBE00A64872 /* Build configuration list for PBXNativeTarget "InstaJamTests" */;
+			buildPhases = (
+				70516FC82DA03FBE00A64872 /* Sources */,
+				70516FC92DA03FBE00A64872 /* Frameworks */,
+				70516FCA2DA03FBE00A64872 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70516FCE2DA03FBE00A64872 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				70516FCF2DA03FBE00A64872 /* InstaJamTests */,
+			);
+			name = InstaJamTests;
+			packageProductDependencies = (
+			);
+			productName = InstaJamTests;
+			productReference = 70516FCC2DA03FBE00A64872 /* InstaJamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		70516FD52DA03FBE00A64872 /* InstaJamUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70516FE62DA03FBE00A64872 /* Build configuration list for PBXNativeTarget "InstaJamUITests" */;
+			buildPhases = (
+				70516FD22DA03FBE00A64872 /* Sources */,
+				70516FD32DA03FBE00A64872 /* Frameworks */,
+				70516FD42DA03FBE00A64872 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70516FD82DA03FBE00A64872 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				70516FD92DA03FBE00A64872 /* InstaJamUITests */,
+			);
+			name = InstaJamUITests;
+			packageProductDependencies = (
+			);
+			productName = InstaJamUITests;
+			productReference = 70516FD62DA03FBE00A64872 /* InstaJamUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		70516FB72DA03FBC00A64872 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					70516FBE2DA03FBC00A64872 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					70516FCB2DA03FBE00A64872 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 70516FBE2DA03FBC00A64872;
+					};
+					70516FD52DA03FBE00A64872 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 70516FBE2DA03FBC00A64872;
+					};
+				};
+			};
+			buildConfigurationList = 70516FBA2DA03FBC00A64872 /* Build configuration list for PBXProject "InstaJam" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 70516FB62DA03FBC00A64872;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				705170012DA04B4600A64872 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 70516FC02DA03FBC00A64872 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70516FBE2DA03FBC00A64872 /* InstaJam */,
+				70516FCB2DA03FBE00A64872 /* InstaJamTests */,
+				70516FD52DA03FBE00A64872 /* InstaJamUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		70516FBD2DA03FBC00A64872 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				705170002DA04A7100A64872 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70516FCA2DA03FBE00A64872 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70516FD42DA03FBE00A64872 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70516FBB2DA03FBC00A64872 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70516FC82DA03FBE00A64872 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70516FD22DA03FBE00A64872 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		70516FCE2DA03FBE00A64872 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70516FBE2DA03FBC00A64872 /* InstaJam */;
+			targetProxy = 70516FCD2DA03FBE00A64872 /* PBXContainerItemProxy */;
+		};
+		70516FD82DA03FBE00A64872 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70516FBE2DA03FBC00A64872 /* InstaJam */;
+			targetProxy = 70516FD72DA03FBE00A64872 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		70516FDE2DA03FBE00A64872 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = J39KNCK3C8;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		70516FDF2DA03FBE00A64872 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = J39KNCK3C8;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		70516FE12DA03FBE00A64872 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J39KNCK3C8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = InstaJam/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = InstaJam;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ethanwaters.InstaJam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		70516FE22DA03FBE00A64872 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J39KNCK3C8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = InstaJam/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = InstaJam;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ethanwaters.InstaJam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		70516FE42DA03FBE00A64872 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J39KNCK3C8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ethanwaters.InstaJamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstaJam.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InstaJam";
+			};
+			name = Debug;
+		};
+		70516FE52DA03FBE00A64872 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J39KNCK3C8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ethanwaters.InstaJamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstaJam.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InstaJam";
+			};
+			name = Release;
+		};
+		70516FE72DA03FBE00A64872 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J39KNCK3C8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ethanwaters.InstaJamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InstaJam;
+			};
+			name = Debug;
+		};
+		70516FE82DA03FBE00A64872 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J39KNCK3C8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ethanwaters.InstaJamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InstaJam;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		70516FBA2DA03FBC00A64872 /* Build configuration list for PBXProject "InstaJam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70516FDE2DA03FBE00A64872 /* Debug */,
+				70516FDF2DA03FBE00A64872 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70516FE02DA03FBE00A64872 /* Build configuration list for PBXNativeTarget "InstaJam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70516FE12DA03FBE00A64872 /* Debug */,
+				70516FE22DA03FBE00A64872 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70516FE32DA03FBE00A64872 /* Build configuration list for PBXNativeTarget "InstaJamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70516FE42DA03FBE00A64872 /* Debug */,
+				70516FE52DA03FBE00A64872 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70516FE62DA03FBE00A64872 /* Build configuration list for PBXNativeTarget "InstaJamUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70516FE72DA03FBE00A64872 /* Debug */,
+				70516FE82DA03FBE00A64872 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		705170012DA04B4600A64872 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		704278CD2DA8422200BA951E /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 705170012DA04B4600A64872 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		705170022DA04B4600A64872 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 705170012DA04B4600A64872 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		705170042DA04B4600A64872 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 705170012DA04B4600A64872 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		705170062DA04B4600A64872 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 705170012DA04B4600A64872 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 70516FB72DA03FBC00A64872 /* Project object */;
+}
