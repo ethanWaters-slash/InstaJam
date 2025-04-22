@@ -25,9 +25,3 @@ InstaJam is a SwiftUI-powered iOS app designed to help musicians connect with ea
   - Firestore
   - Authentication (Email/Password)
   - Firebase Messaging (optional for push notifications)
-
-### Installation
-
-1. **Clone this repo**:
-   ```bash
-   git clone https://github.com/your-username/InstaJam.git
