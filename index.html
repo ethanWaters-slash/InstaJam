@@ -4,109 +4,64 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>InstaJam – Find Musicians. Jam Together.</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background: #f6f6f9;
-      color: #333;
-    }
-    header {
-      background-color: #6C63FF;
-      color: white;
-      text-align: center;
-      padding: 3rem 1rem;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 3rem;
-    }
-    header p {
-      font-size: 1.25rem;
-      margin-top: 0.5rem;
-    }
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      padding: 2rem;
-      max-width: 1200px;
-      margin: auto;
-    }
-    .feature {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      padding: 1.5rem;
-    }
-    .feature h3 {
-      color: #6C63FF;
-      margin-bottom: 0.5rem;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      color: #888;
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header style="background-color: #6C63FF; color: white; text-align: center; padding: 2rem;">
-    <img
-      src="InstaJam.png"
-      alt="InstaJam App Icon"
-      style="width: 80px; height: 80px; border-radius: 28%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin-bottom: 1rem;"
-    />
-    <h1 style="margin: 0; font-size: 2.5rem;">InstaJam</h1>
-    <p style="margin-top: 0.5rem; font-size: 1.2rem;">Find Musicians. Jam Together.</p>
-
-    <!-- App Store Button -->
-    <a href=" " target=" ">
+  <header>
+    <img src="images/InstaJam.png" alt="InstaJam App Icon" />
+    <h1>InstaJam</h1>
+    <p>Find Musicians. Jam Together.</p>
+    <a href="https://testflight.apple.com/join/E1cuFbp9" target="_blank">
       <img
         src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
         alt="Download on the App Store"
-        style="height: 45px; margin-top: 1rem;"
+        class="store-badge"
       />
     </a>
   </header>
 
-<section class="features">
-  <div class="feature">
-    <h3>🎯 Discover Musicians</h3>
-    <p>Use filters for genre, skill, and instrument to find your perfect match nearby.</p>
-  </div>
-  <div class="feature">
-    <h3>💬 Instant Messaging</h3>
-    <p>Chat in real-time with typing indicators, read receipts, and message status.</p>
-  </div>
-  <div class="feature">
-    <h3>📸 Custom Profiles</h3>
-    <p>Add your instrument, bio, genres, and a profile pic to stand out.</p>
-  </div>
-  <div class="feature">
-    <h3>📍 Location Matching</h3>
-    <p>Discover nearby jam partners with our smart geolocation engine.</p>
-  </div>
-  <div class="feature">
-    <h3>🔔 Notifications</h3>
-    <p>Get notified the moment you receive a message or find a match.</p>
-  </div>
-</section>
-<section style="text-align: center; padding: 3rem 1rem; background-color: #f9f9f9;">
-  <h2 style="font-size: 2rem; margin-bottom: 1rem;">InstaJam in Action</h2>
-  <p style="color: #666; margin-bottom: 2rem;">Preview the core features: Profile, Nearby Musicians, and Messaging.</p>
+  <section class="features">
+    <div class="feature">
+      <h3>🎯 Discover Musicians</h3>
+      <p>Filter by instrument, genre, and skill to find your perfect match.</p>
+    </div>
+    <div class="feature">
+      <h3>🎤 Host Jam Sessions & Events</h3>
+      <p>Create events, assign open roles for instruments, and manage RSVPs with ease.</p>
+    </div>
+    <div class="feature">
+      <h3>🎶 Group Jam Chats</h3>
+      <p>Auto-generated group chats for your jam events to connect with the band.</p>
+    </div>
+    <div class="feature">
+      <h3>📸 Personalized Profiles</h3>
+      <p>Show off your skills, instruments, and music style with rich profiles.</p>
+    </div>
+    <div class="feature">
+      <h3>📍 Location-Based Matching</h3>
+      <p>Find musicians near you using our smart geolocation engine.</p>
+    </div>
+    <div class="feature">
+      <h3>🔔 Smart Notifications</h3>
+      <p>Stay updated with RSVP approvals, messages, and jam invites.</p>
+    </div>
+  </section>
 
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
-    <img src="sim1.png" alt="InstaJam Profile View" style="width: 250px; border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />
-    <img src="sim2.png" alt="Nearby Musicians View" style="width: 250px; border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />
-    <img src="sim3.png" alt="Messages View" style="width: 250px; border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />
-  </div>
-</section>
+  <section class="preview-section">
+    <h2>🎵 InstaJam in Action</h2>
+    <p>Preview core features: Profiles, Nearby Musicians, and Messaging.</p>
+    <div class="preview-gallery">
+      <img src="images/sim1.png" alt="InstaJam Profile View" />
+      <img src="images/sim2.png" alt="Nearby Musicians View" />
+      <img src="images/sim3.png" alt="Messages View" />
+    </div>
+  </section>
 
-<footer>
-  &copy; 2025 InstaJam • Built with ❤️ by Ethan Waters
-</footer>
-
+  <footer>
+    &copy; 2025 InstaJam • Built with ❤️ by Ethan Waters
+  </footer>
 </body>
 </html>
+
