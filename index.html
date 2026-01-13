@@ -3,102 +3,116 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="InstaJam.png" />
-
-  <!-- Primary Meta Tags -->
-  <title>InstaJam – Find Musicians. Jam Together.</title>
-  <meta name="title" content="InstaJam – Find Musicians. Jam Together.">
-  <meta name="description" content="InstaJam connects musicians to jam, host events, and chat in real time. Discover local talent and start jamming today.">
-
-  <!-- Open Graph / Facebook / Discord -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://instajam.info/">
-  <meta property="og:title" content="InstaJam – Find Musicians. Jam Together.">
-  <meta property="og:description" content="InstaJam connects musicians to jam, host events, and chat in real time. Discover local talent and start jamming today.">
-  <meta property="og:image" content="https://instajam.info/InstaJam.png">
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://instajam.info/">
-  <meta name="twitter:title" content="InstaJam – Find Musicians. Jam Together.">
-  <meta name="twitter:description" content="InstaJam connects musicians to jam, host events, and chat in real time.">
-  <meta name="twitter:image" content="https://instajam.info/InstaJam.png">
-
-  <!-- Fonts & Styles -->
+  <title>InstaJam – Find Your Sound</title>
+  <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
 </head>
+<script>
+  window.addEventListener("load", () => {
+    window.scrollTo(0, 0);
+    history.replaceState(null, null, " "); // clears the hash so the page won't auto-scroll again
+  });
+</script>
 
 <body>
-  <header>
-  <img src="InstaJam.png" alt="InstaJam App Icon" />
-  <h1>InstaJam</h1>
+  <!-- Header / Navigation -->
+  <header class="nav-header">
+    <div class="nav-container">
+      <img src="images/InstaJam.png" alt="InstaJam Logo" class="logo"/>
+      <h1>InstaJam</h1>
+      <nav class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#preview">Preview</a>
+        <a href="#about">About</a>
+        <a href="#community">Community</a>
+      </nav>
+      <a href="#download" class="download-btn">Download App</a>
+    </div>
+  </header>
 
-  <section class="beta-invite">
-    <h2>🚀 Welcome TestFlight Users!</h2>
-    <p>Thanks for helping us test the first release of <strong>InstaJam</strong></p>
-    <p>🎸 <strong>Try it out:</strong> Set up your profile, browse nearby musicians, create events, and chat!</p>
-    <p>🐞 <strong>Found a bug?</strong> Something broken or confusing?</p>
-    <p>💡 <strong>Got ideas?</strong> Suggest new features or improvements!</p>
-    <p>📩 Shake your device in-app to report feedback, or just reach out!</p>
-    <p>We’re excited to hear what you think — <strong>rock on 🤘</strong></p>
-  </section>
-
-  <p>Find Musicians. Jam Together.</p>
-  <a href="https://testflight.apple.com/join/E1cuFbp9" target="_blank">
-    <img
-      src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-      alt="Download on the App Store"
-      class="store-badge"
-    />
-  </a>
-</header>
-
-  <section class="features">
-    <div class="feature">
-      <h3>🎯 Discover Musicians</h3>
-      <p>Filter by instrument, genre, and skill to find your perfect match.</p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Meet Musicians. Create Magic.</h1>
+      <p>InstaJam helps you find local musicians, start jam sessions, and grow your creative circle — all from your phone.</p>
+      <div class="store-buttons">
+        <img src="images/appstoreBadge.svg" alt="Download on the App Store" class="store-badge" />
+      </div>
     </div>
-    <div class="feature">
-      <h3>🎤 Host Jam Sessions & Events</h3>
-      <p>Create events, assign open roles for instruments, and manage RSVPs with ease.</p>
-    </div>
-    <div class="feature">
-      <h3>🎶 Group Jam Chats</h3>
-      <p>Auto-generated group chats for your jam events to connect with the band.</p>
-    </div>
-    <div class="feature">
-      <h3>📸 Personalized Profiles</h3>
-      <p>Show off your skills, instruments, and music style with rich profiles.</p>
-    </div>
-    <div class="feature">
-      <h3>📍 Location-Based Matching</h3>
-      <p>Find musicians near you using our smart geolocation engine.</p>
-    </div>
-    <div class="feature">
-      <h3>🔔 Smart Notifications</h3>
-      <p>Stay updated with RSVP approvals, messages, and jam invites.</p>
+    <div class="hero-image">
+      <img src="assets/phone-mockup.png" alt="App Preview" />
     </div>
   </section>
 
-  <section class="preview-section">
-    <h2>🎵 InstaJam in Action</h2>
-    <p>Preview core features: Profiles, Nearby Musicians, and Messaging.</p>
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <h2>Why Musicians Love InstaJam</h2>
+    <div class="feature-grid">
+      <div class="feature">
+        <img src="images/messageIcon.png" alt="Chat Icon" />
+        <h3>Message</h3>
+        <p>Chat in real-time, share ideas, and plan your next jam session effortlessly.</p>
+      </div>
+      <div class="feature">
+        <img src="images/jamIcon.png" alt="Event Icon" />
+        <h3>Jam</h3>
+        <p>Host or join jam sessions, open mics, or private events right from the app.</p>
+      </div>
+      <div class="feature">
+        <img src="images/growIcon.png" alt="Grow Icon" />
+        <h3>Grow</h3>
+        <p>Connect with artists, build your portfolio, and amplify your creative journey.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- App Preview Gallery -->
+  <section id="preview" class="preview-section">
+    <h2>See InstaJam in Action</h2>
+    <p>Beautifully designed, intuitive, and built for connection.</p>
     <div class="preview-gallery">
-      <img src="sim1.png" alt="InstaJam Profile View" />
-      <img src="sim2.png" alt="Nearby Musicians View" />
-      <img src="sim3.png" alt="Messages View" />
+      <img src="assets/screenshot1.png" alt="App Screenshot 1" />
+      <img src="assets/screenshot2.png" alt="App Screenshot 2" />
+      <img src="assets/screenshot3.png" alt="App Screenshot 3" />
     </div>
   </section>
 
-  <footer>
-    &copy; 2025 InstaJam • Built with ❤️ by Ethan Waters
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="about-container">
+      <h2>About InstaJam</h2>
+      <p>
+        InstaJam was built by a musician who wanted one thing: to make it easier
+        for artists to meet, collaborate, and create together. No more searching endlessly
+        for bandmates, no more missed connections — just pure musical synergy at your fingertips.
+      </p>
+      <p>
+        Our mission is simple: empower musicians of all backgrounds to find their sound,
+        grow their craft, and connect with a vibrant creative community. Whether you're
+        a seasoned performer or picking up your instrument for the first time, InstaJam
+        is here to help you make something unforgettable.
+      </p>
+    </div>
+  </section>
+
+  <!-- Community Section -->
+  <section id="community" class="community">
+    <h2>Join a Global Music Community</h2>
+    <p>From local jam sessions to global collaborations — InstaJam brings musicians together everywhere.</p>
+    <a href="#download" class="cta-btn">Join the Movement</a>
+  </section>
+
+  <!-- Footer -->
+  <footer id="download">
+    <h3>Get InstaJam Today</h3>
+    <p>Available on iOS and coming soon to Android</p>
+    <div class="store-buttons">
+      <img src="images/appstoreBadge.svg" alt="App Store" class="store-badge" />
+      <!--<img src="assets/googleplay-badge.svg" alt="Google Play" class="store-badge" /> -->
+    </div>
+    <p class="footer-note">© 2025 InstaJam. Built by a Musician, for Musicians.</p>
   </footer>
 </body>
 </html>
-
-</html>
-
