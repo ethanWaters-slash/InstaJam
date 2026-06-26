@@ -62,6 +62,30 @@ body {
   color: var(--accent-color);
 }
 
+/* ── Nav Social Icons ─────────────────────────────────────────── */
+.nav-social {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.nav-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  color: #555;
+  transition: color 0.2s ease, background 0.2s ease;
+  text-decoration: none;
+}
+
+.nav-social-link:hover {
+  color: var(--accent-color);
+  background: rgba(108, 99, 255, 0.08);
+}
+
 .download-btn {
   background: var(--accent-gradient);
   color: white;
@@ -173,7 +197,7 @@ body {
 }
 
 .feature img {
-  width: 72px;        /* Increased from 48px */
+  width: 72px;
   height: 72px;
   margin-bottom: 1.2rem;
   transition: transform 0.25s ease;
@@ -182,7 +206,6 @@ body {
 .feature img:hover {
   transform: scale(1.08);
 }
-
 
 .feature h3 {
   color: var(--accent-color);
@@ -255,7 +278,6 @@ body {
   margin-bottom: 1.5rem;
   line-height: 1.75rem;
 }
-
 
 /* ------------------ Community ------------------ */
 .community {
@@ -466,7 +488,7 @@ body {
 /* ------------------ Footer ------------------ */
 footer {
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 4rem 2rem 2.5rem;
   background: var(--accent-gradient);
   color: white;
 }
@@ -476,9 +498,10 @@ footer h3 {
   margin-bottom: 0.5rem;
 }
 
-footer p {
+footer > p {
   margin: 0.5rem 0;
 }
+
 footer .store-buttons {
   display: flex;
   justify-content: center;
@@ -497,8 +520,33 @@ footer .store-badge:hover {
   transform: scale(1.05);
 }
 
+/* ── Footer Social Links ──────────────────────────────────────── */
+.footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1.75rem 0 0.5rem;
+}
+
+.footer-social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-social-link:hover {
+  color: #fff;
+  transform: translateY(-2px);
+}
+
 .footer-links {
-  margin-top: 2rem;
+  margin-top: 1.75rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -529,6 +577,70 @@ footer .store-badge:hover {
   opacity: 0.9;
 }
 
+/* ── Ticketmaster Partner Bar ─────────────────────────────────── */
+.partner-bar {
+  margin-top: 2.5rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.partner-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
+  margin: 0;
+}
+
+.partner-link {
+  text-decoration: none;
+}
+
+.partner-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.55rem 1.25rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.partner-link:hover .partner-badge {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.35);
+  transform: translateY(-2px);
+}
+
+.partner-badge-icon {
+  font-size: 1.1rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.partner-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 0.01em;
+}
+
+.partner-tag {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.25);
+  padding-left: 0.65rem;
+}
 
 /* ------------------ Animations ------------------ */
 @keyframes fadeUp {
@@ -558,6 +670,9 @@ footer .store-badge:hover {
   .nav-links {
     display: none;
   }
+  .nav-social {
+    display: none;
+  }
 
   .contact-container {
     padding: 2.2rem 1.4rem;
@@ -575,5 +690,13 @@ footer .store-badge:hover {
 
   .legal-body {
     padding: 1rem 1.2rem 1.2rem;
+  }
+
+  .footer-social {
+    gap: 1.25rem;
+  }
+
+  .partner-tag {
+    display: none;
   }
 }
